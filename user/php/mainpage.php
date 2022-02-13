@@ -76,6 +76,7 @@ function subString($str)
       <a href="mainpage.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
       <a href="updateinfo.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Profile</a>
       <a href="mycart.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">My Cart</a>
+      <a href="mypayment.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">My Payment</a>
       <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Logout</a>
       <script src="../../js/script.js"></script>
     </div>
