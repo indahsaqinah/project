@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>FROZEN CARTOON PAU</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<!--Instagram floating-->
+<a href="https://instagram.com/paucartoon?utm_medium=copy_link" class="float" target="_blank">
+<i class="fa fa-instagram my-float"></i>
+</a>
+
+<!--CSS-->
+<style>
+.body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif; font: size 16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.w3-sofia {
+  font-family: Sofia, cursive;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#cd486b;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.my-float{
+	margin-top:16px;
+}
+.row {
+  display: flex;
+}
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  padding-left: 16px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right:150px;
+}
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+</style>
+
+<body>
+
+<!-- Sidebar-->
+<nav class="w3-sidebar w3-2019-creme-de-peche w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close</a>
+ <!--Sidebar Title-->
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>FROZEN CARTOON PAU</b></h3>
+  </div>
+
+  <!--Navigation bar-->
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="#location" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Where to Buy</a>  
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
+    <button class="dropdown-btn w3-hover-white">Login<i class="fa fa-caret-down w3-hover-white"></i></button>
+    <div class="dropdown-container">
+      <a href="admin/php/login.php" class="w3-button w3-hover-white">Admin</a><br>
+      <a href="user/php/login.php" class="w3-button w3-hover-white">User</a>
+    </div>
+    <a href="user/php/signup.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sign Up</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-2019-creme-de-peche w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-2019-creme-de-peche w3-margin-right" onclick="w3_open()">☰</a>
+  <span>FROZEN CARTOON PAU</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-2019-sweet-corn w3-center" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container w3-center" style="margin-top:45px" id="showcase">
+    <img src="res/logo.png" alt="Trulli" width="420" height="320" class="responsive">
+  </div>
+
+  <!--Home-->
+  <div class="w3-container">
+    <br><br><h1 style="font-size: 35px">&ensp;Delicious
+    <span style="color: #DA1A58"><strong>Cartoon Pau.</strong></span><br>
+    &ensp;12 Flavours.<br>
+    &ensp;Too cute to eat! &#x1F60B;</h1><br><br><br><br>
+  </div>
+
+    <!-- About -->
+    <div class="w3-container w3-row-padding w3-padding-16 w3-text-align-justify" id="about" style="margin-top:75px">
+      <h1 class="w3-xxlarge w3-2019-creme-de-peche w3-center hover-text-black w3-sofia" style="text-shadow: 1px 1px 0 #444;"><b>About</b></h1>
+      <p>Frozen Cartoon Pau is started to sale in July 2021. Little by little, the business grew and it now has several agents in the Klang Valley. This pau is also marketed in selected stores.
+        This pau comes in 12 various flavour; chocolate, chicken carbonara, kaya and others that are very tasty and suitable for people of all ages to eat. 
+        Frozen Cartoon Pau is also HALAL and a product of Bumiputera. Try first and you will not regret! &#x1F609;
+      </p>
+      <p>Anyone who wants to be a Frozen Cartoon Pau agent can apply as well.</p>
+      <a href="main/newagent.php" target="_blank" class="w3-2019-sweet-lilac"><strong>Sign up to be an agent!</strong></a><br><br>
+      <img src="res/all.png" class="w3-hover-opacity" alt="All Flav" style="width:250px;height:250px;">
+    </div>
+
+  <!-- Location -->
+  <div class="w3-container w3-row-padding w3-padding-16" id="location" style="margin-top:70px">
+    <h1 class="w3-xxlarge w3-2019-creme-de-peche w3-center hover-text-black w3-sofia" style="text-shadow: 1px 1px 0 #444;"><b>Where To Buy</b></h1>
+    <p><a href="user/php/signup.php" class="w3-hover-red">Sign Up</a> in our website to purchase. Our pau is also available at a several stores, and in some areas, we also offer Cash on Delivery (COD) service up to your doorstep!</p>
+       
+    <!--Stores Tabs-->
+    <div class="w3-container">
+      <h2 class="w3-cursive">Stores</h2>
+    
+      <div class="w3-row">
+        <a href="javascript:void(0)" onclick="openCity(event, 'Klang');">
+          <button class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding w3-button" onclick="openCity(event, 'Klang');">Klang</button>
+        </a>  
+        <a href="javascript:void(0)" onclick="openCity(event, 'Senawang');">
+        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Senawang</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'Puchong');">
+          <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Puchong</div> 
+        </a>
+      </div>
+        
+      <div id="Klang" class="w3-container city" style="display:none">
+        <h3>Ramco Fros Mart</h3>
+        <!-- Google Map-->
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.15944852465!2d101.39856691457585!3d3.0519494977774753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc55e1a3999ef1%3A0x285434b26c10c751!2sRamco%20Fros%20Mart!5e0!3m2!1sen!2smy!4v1635864286036!5m2!1sen!2smy"  
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="responsive">
+          </iframe>
+        </div>
+      </div>
+        
+      <div id="Senawang" class="w3-container city" style="display:none">
+        <h3>Restaurant Mia Char Kueyteow</h3>
+        <!--Google Map-->
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8149478.375644414!2d104.66863460112083!3d4.173659438223281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cde0b14423962f%3A0x9cbf33ee0b30992b!2sRestaurant%20Mia%20Char%20Keuy%20Tiaw!5e0!3m2!1sen!2smy!4v1635864693796!5m2!1sen!2smy" 
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="responsive">
+          </iframe>
+        </div>
+      </div>
+        
+      <div id="Puchong" class="w3-container city" style="display:none">
+        <h3>House of Frozen Food</32>
+        <!--Google Map -->
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.47973199083!2d101.6088660145757!3d2.96430389784107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb368d34bc4d3%3A0x5671a63e3d696d74!2sHOUSE%20OF%20FROZEN%20FOOD!5e0!3m2!1sen!2smy!4v1635864947837!5m2!1sen!2smy" 
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="responsive">
+          </iframe>
+        </div>
+            
+        <h3>As Salam Halal Frozen Food Mart</h3>
+        <!--Google Map-->
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.3157996852856!2d101.60575591457578!3d3.0094825978082884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb3642e347ac7%3A0x4e8508aa8d05a2f2!2sAs%20Salam%20Halal%20Frozen%20Food%20Mart!5e0!3m2!1sen!2smy!4v1635865035698!5m2!1sen!2smy" 
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="responsive"></iframe>
+        </div>
+      </div>
+    </div>  
+        
+    <!--COD Tabs-->
+    <div class="w3-container w3-padding-top-48">
+      <h2 class="w3-cursive">COD Agents Area</h2>
+        
+      <div class="w3-row">
+        <a href="javascript:void(0)" onclick="openCity(event, 'puchong');">
+          <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Puchong</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'klang');">
+          <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Klang</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'kl');">
+          <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Kuala Lumpur</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'rawang');">
+          <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Rawang</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'sgbuloh');">
+          <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Sungai Buloh</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'melaka');">
+          <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Melaka</div>
+        </a>
+      </div>
+        
+      <!--Agent Whatsapp link-->
+      <div id="puchong" class="w3-container city" style="display:none">
+        <h3>Contact</h3>
+        <a href="https://api.whatsapp.com/send?phone=601110088545" style="display: inline-block; padding:16px; border-radius: 8px; background-color: #25D366; color: #fff; text-decoration: none; font-family: sans-serif; font-size: 16px;" target="_blank">Indah</a>
+      </div>
+
+      <div id="klang" class="w3-container city" style="display:none">
+        <h3>Contact</h3>
+        <a href="https://api.whatsapp.com/send?phone=60133691677" style="display: inline-block; padding:16px; border-radius: 8px; background-color: #25D366; color: #fff; text-decoration: none; font-family: sans-serif; font-size: 16px;" target="_blank">Hafnida</a>
+        <a href="https://api.whatsapp.com/send?phone=60195105987" style="display: inline-block; padding:16px; border-radius: 8px; background-color: #25D366; color: #fff; text-decoration: none; font-family: sans-serif; font-size: 16px;" target="_blank">Iewa</a>
+        <a href="https://api.whatsapp.com/send?phone=60127142962" style="display: inline-block; padding:16px; border-radius: 8px; background-color: #25D366; color: #fff; text-decoration: none; font-family: sans-serif; font-size: 16px;" target="_blank">Syahrain Noridan</a>
+      </div>
+        
+      <div id="kl" class="w3-container city" style="display:none">
+        <h3>Contact</h3>
+          <a href="https://api.whatsapp.com/send?phone=60172645241" style="display: inline-block; padding:16px; border-radius: 8px; background-color: #25D366; color: #fff; text-decoration: none; font-family: sans-serif; font-size: 16px;" target="_blank">Arifah</a>
+      </div>
+
+      <div id="rawang" class="w3-container city" style="display:none">
+        <h3>Contact</h3>
+          <a href="https://api.whatsapp.com/send?phone=60147206891" style="display: inline-block; padding:16px; border-radius: 8px; background-color: #25D366; color: #fff; text-decoration: none; font-family: sans-serif; font-size: 16px;" target="_blank">Mya</a>
+      </div>
+
+      <div id="sgbuloh" class="w3-container city" style="display:none">
+        <h3>Contact</h3>
+        <a href="https://api.whatsapp.com/send?phone=60147206891" style="display: inline-block; padding:16px; border-radius: 8px; background-color: #25D366; color: #fff; text-decoration: none; font-family: sans-serif; font-size: 16px;" target="_blank">Mya</a>
+      </div>
+
+      <div id="melaka" class="w3-container city" style="display:none">
+        <h3>Contact</h3>
+        <a href="https://api.whatsapp.com/send?phone=601110088545" style="display: inline-block; padding:16px; border-radius: 8px; background-color: #25D366; color: #fff; text-decoration: none; font-family: sans-serif; font-size: 16px;" target="_blank">Indah</a>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- Contact -->
+  <div class="w3-container w3-row-padding w3-padding-16" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-2019-creme-de-peche w3-center hover-text-black w3-sofia" style="text-shadow: 1px 1px 0 #444;"><b>Contact Us!</b></h1>
+    <p>Do not hesitate to drop some comments for improvement :)</p>
+    
+    <!--Contact form-->
+    <form action="contact.php" target="_blank">
+
+      <div class="w3-row w3-section"> <!--First section-->
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+        <div class="w3-rest">
+        <input class="w3-input w3-border" type="text" name="name" placeholder="Name" required>
+        </div>
+      </div>
+
+      <div class="w3-row w3-section"> <!--Second section-->
+        <div class="w3-col" style="width:50px">
+          <i class="w3-xxlarge fa fa-envelope-o"></i>
+        </div>
+        <div class="w3-rest">
+        <input class="w3-input w3-border" type="text" name="email" placeholder="Email Address" required>
+        </div>
+      </div>
+
+      <div class="w3-section"> <!--Third section-->
+        <div class="w3-col" style="width:50px">
+          <i class="w3-xxlarge fa fa-pencil"></i>
+        </div>
+        <div class="w3-rest">
+        <textarea class="w3-input w3-border" id="idmessage" name="message" rows="4" required
+        cols="50" width="100%" placeholder="Please enter your message"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-section w3-ripple w3-padding-large w3-2019-sweet-lilac w3-margin-bottom  w3-round-large" style="text-shadow: 1px 1px 0 rgb(196, 193, 193);">Send Message</button>
+    </form>  
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-2019-creme-de-peche w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <p>Powered by FROZEN CARTOON PAU</p>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+  // Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+//Script for Location tab
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-red";
+}
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html>
